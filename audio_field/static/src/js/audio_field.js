@@ -26,7 +26,7 @@ var AudioField = FieldChar.extend({
         }
     },
     _renderPlayer: function () {
-        this.replaceElement(QWeb.render('audio_field', {'widget':this, 'options': this.nodeOptions}));
+        this._replaceElement(QWeb.render('audio_field', {'widget':this, 'options': this.nodeOptions}));
     },
     _renderReadonly: function () {
         this._renderPlayer();
